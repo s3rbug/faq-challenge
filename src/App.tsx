@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from "react-redux";
+import MainPage from "./components/MainPage";
+import store from "./redux/reduxStore";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<>
+			<MainPage />
+			{/* <footer>
+				<div className="attribution">
+					Challenge by{" "}
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Frontend Mentor
+					</a>
+					. Coded by{" "}
+					<a href="https://github.com/s3rbug" target="_blank" rel="noreferrer">
+						s3rbug
+					</a>
+					.
+				</div>
+			</footer> */}
+		</>
+	);
+};
 
-export default App;
+const WrappedApp = () => {
+	return (
+		<Provider store={store}>
+			<App />
+		</Provider>
+	);
+};
+
+export default WrappedApp;
