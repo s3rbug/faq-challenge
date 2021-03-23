@@ -1,10 +1,8 @@
 .main {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background-image: linear-gradient(#af67e9, #6565e7);
 	padding: 8% 28%;
-	padding-bottom: 0;
-	z-index: 100;
 }
 
 .faq {
@@ -16,32 +14,36 @@
 	padding: 12% 0;
 }
 
-.woman,
-.box {
-	max-height: 100%;
-	max-width: 120%;
+.questions {
+	padding: 10px 15px;
 }
 
 .images {
-	display: inline-block;
-	position: relative;
-}
-
-.questions {
-	padding: 10px 30px;
-}
-
-.womanWrapper {
-	overflow: hidden;
+	width: 50%;
 }
 
 .woman {
-	margin-left: -20%;
+	margin-left: -27%;
 }
 
-.boxWrapper {
-	max-width: 50%;
-	position: absolute;
-	top: 28%;
-	left: -25%;
+@media (max-width: 900px) {
+	.main {
+		padding: 15% 10%;
+	}
+	.faq {
+		flex-direction: column;
+		padding: 0 50px;
+	}
+	.box {
+		display: none;
+	}
+	.womanMobile {
+		display: block;
+		margin: 0 auto;
+		max-width: 90%;
+		margin-top: -93px;
+	}
+	.images {
+		width: 100%;
+	}
 }

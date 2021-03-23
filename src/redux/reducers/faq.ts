@@ -1,4 +1,3 @@
-import { FaqActionTypes } from "./../actions/types";
 import { QuestionType } from "./../../types/index_d";
 
 const initialState = {
@@ -31,7 +30,7 @@ const initialState = {
 	] as Array<QuestionType>,
 };
 
-const reducer = (state = initialState, action: FaqActionTypes) => {
+const reducer = (state = initialState) => {
 	return state;
 };
 

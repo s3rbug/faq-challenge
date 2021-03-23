@@ -1,22 +1,24 @@
 import React from "react";
 import Accordion from "./Accordion";
 import classes from "./MainPage.module.css";
-import WomanIcon from "../images/illustration-woman-online-desktop.svg";
-import BoxIcon from "../images/illustration-box-desktop.svg";
+import WomanIconMobile from "../images/illustration-woman-online-mobile.svg";
 import { useTypedSelector } from "../redux/reduxStore";
 
-const MainPage = () => {
+type PropsType = {
+	children: React.ReactNode;
+};
+
+const MainPage = ({ children }: PropsType) => {
 	const questions = useTypedSelector((state) => state.faq.questions);
 	return (
 		<div className={classes.main}>
 			<div className={classes.faq}>
 				<div className={classes.images}>
-					<div className={classes.womanWrapper}>
-						<img src={WomanIcon} alt="woman" className={classes.woman} />
-					</div>
-					<p className={classes.boxWrapper}>
-						<img src={BoxIcon} alt="box" className={classes.box} />
-					</p>
+					<img
+						src={WomanIconMobile}
+						alt="woman mobile"
+						className={classes.woman + " " + classes.womanMobile}
+					/>
 				</div>
 				<div className={classes.questions}>
 					<h1>FAQ</h1>
@@ -31,6 +33,7 @@ const MainPage = () => {
 					</div>
 				</div>
 			</div>
+			<>{children}</>
 		</div>
 	);
 };
