@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/faq-challenge/static/css/main.e2c03fa6.chunk.css",
+    "main.js": "/faq-challenge/static/js/main.f3317bc6.chunk.js",
+    "main.js.map": "/faq-challenge/static/js/main.f3317bc6.chunk.js.map",
+    "runtime-main.js": "/faq-challenge/static/js/runtime-main.98c2feb0.js",
+    "runtime-main.js.map": "/faq-challenge/static/js/runtime-main.98c2feb0.js.map",
+    "static/js/2.9e58378b.chunk.js": "/faq-challenge/static/js/2.9e58378b.chunk.js",
+    "static/js/2.9e58378b.chunk.js.map": "/faq-challenge/static/js/2.9e58378b.chunk.js.map",
+    "static/js/3.be0e094d.chunk.js": "/faq-challenge/static/js/3.be0e094d.chunk.js",
+    "static/js/3.be0e094d.chunk.js.map": "/faq-challenge/static/js/3.be0e094d.chunk.js.map",
+    "index.html": "/faq-challenge/index.html",
+    "static/css/main.e2c03fa6.chunk.css.map": "/faq-challenge/static/css/main.e2c03fa6.chunk.css.map",
+    "static/js/2.9e58378b.chunk.js.LICENSE.txt": "/faq-challenge/static/js/2.9e58378b.chunk.js.LICENSE.txt",
+    "static/media/icon-arrow-down.852fa301.svg": "/faq-challenge/static/media/icon-arrow-down.852fa301.svg",
+    "static/media/illustration-woman-online-mobile.0ec5a893.svg": "/faq-challenge/static/media/illustration-woman-online-mobile.0ec5a893.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98c2feb0.js",
+    "static/js/2.9e58378b.chunk.js",
+    "static/css/main.e2c03fa6.chunk.css",
+    "static/js/main.f3317bc6.chunk.js"
+  ]
+}
