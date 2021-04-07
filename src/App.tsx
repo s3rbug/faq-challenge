@@ -5,11 +5,9 @@ import store from "./redux/reduxStore";
 
 const App = () => {
 	return (
-		<>
-			<MainPage>
-				<Footer />
-			</MainPage>
-		</>
+		<MainPage>
+			<Footer />
+		</MainPage>
 	);
 };
 
