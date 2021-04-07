@@ -1,0 +1,45 @@
+.header {
+	display: flex;
+}
+
+.title {
+	flex-grow: 1;
+	color: #787887;
+}
+
+.root:hover .title:not(.checkedQuestion) {
+	color: hsl(14, 88%, 65%);
+}
+
+.arrow {
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.text {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out, margin 0.2s, opacity 0.2s;
+	margin-top: 0;
+	opacity: 0;
+	color: #787887;
+}
+
+.checked {
+	max-height: 500px;
+	transition: max-height 0.2s ease-in, margin 0.2s, opacity 0.2s;
+	margin-top: 10px;
+	opacity: 1;
+}
+
+.root {
+	padding-top: 5px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	border-bottom: 1px solid #e7e7e9;
+}
+
+.checkedQuestion {
+	color: #1d1e35;
+	font-weight: 700;
+}

@@ -1,0 +1,9 @@
+.footer * {
+	color: white;
+	text-decoration: none;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 25px;
+}
